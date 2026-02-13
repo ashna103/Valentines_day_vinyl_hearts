@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentine's Day Vinyl Player</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main class="record-player">
+      <div id="player-container" class="player-container">
+        <img
+          id="vinyl"
+          class="vinyl"
+          src="vday_vinyl.png"
+          alt="Spinning vinyl record"
+          draggable="false"
+        />
+        <div class="label">💌</div>
+      </div>
+
+      <button id="play-button" class="btn" type="button">Play</button>
+
+      <audio id="love-song" src="sumika-Fiction.mp3" preload="auto"></audio>
+
+      <h4>Happy Valentines Day Baby!</h4>
+
+      <!-- Hearts/confetti layer -->
+      <div id="heart-layer" class="heart-layer" aria-hidden="true"></div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

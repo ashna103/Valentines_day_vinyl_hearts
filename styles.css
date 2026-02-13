@@ -120,3 +120,36 @@ body {
       scale(1.2) rotate(calc(var(--rot) + 180deg));
   }
 }
+
+/* ===== FULL SCREEN HEART SHOWER ===== */
+
+.heart-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 999;
+}
+
+/* Falling heart */
+.falling-heart {
+  position: absolute;
+  top: -40px;
+  left: var(--x);
+  font-size: var(--size);
+  animation: fall var(--duration) linear forwards;
+  opacity: 0.95;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0.9;
+  }
+}
+
